@@ -1,0 +1,26 @@
+### 🌿 Base URL
+GET http://localhost:5000/
+
+### ➕ Add New Item
+POST http://localhost:5000/items
+Content-Type: application/json
+
+{
+  "name": "Old Laptop",
+  "image": "https://via.placeholder.com/150",
+  "condition": "Used",
+  "location": "Delhi",
+  "description": "Working condition, needs a new battery."
+}
+
+### 📦 Get All Items
+GET http://localhost:5000/items
+
+### 🔄 Update Item Status
+# Replace <id> with the actual MongoDB _id from the GET request
+PUT http://localhost:5000/items/<id>
+Content-Type: application/json
+
+{
+  "status": "exchanged"
+}
