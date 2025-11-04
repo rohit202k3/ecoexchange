@@ -34,4 +34,31 @@ It provides a platform for users to **exchange, donate, or recycle used items**,
 ---
 
 ## 📁 Folder Structure
-
+ecoexchange/
+│
+├── backend/
+│ ├── config/
+│ │ └── db.js # MongoDB connection setup
+│ ├── models/
+│ │ └── itemModel.js # Mongoose schema
+│ ├── routes/
+│ │ └── itemRoutes.js # API routes for CRUD
+│ ├── server.js # Express app entry point
+│ ├── .env # Environment variables (MONGO_URI, PORT)
+│ └── package.json
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ │ └── AddItemForm.jsx
+│ │ ├── pages/
+│ │ │ └── ItemList.jsx
+│ │ ├── App.jsx
+│ │ ├── main.jsx
+│ │ └── index.css
+│ ├── tailwind.config.js
+│ ├── postcss.config.cjs
+│ ├── vite.config.js
+│ └── package.json
+│
+└── README.md
